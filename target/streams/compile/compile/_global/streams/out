@@ -1,16 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\newlo\Downloads\trabalho de TP2\trabalho2\Trabalho2TP2\FLanguage\src\main\scala\br\unb\cic\flang\Interpreter.scala:5:8: not found: object cats[0m
-[0m[[0m[31merror[0m] [0m[0mimport cats.data.State[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\newlo\Downloads\trabalho de TP2\trabalho2\Trabalho2TP2\FLanguage\src\main\scala\br\unb\cic\flang\Interpreter.scala:6:8: not found: object State[0m
-[0m[[0m[31merror[0m] [0m[0mimport State._[0m
-[0m[[0m[31merror[0m] [0m[0m       ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\newlo\Downloads\trabalho de TP2\trabalho2\Trabalho2TP2\FLanguage\src\main\scala\br\unb\cic\flang\Interpreter.scala:27:59: not found: type State[0m
-[0m[[0m[31merror[0m] [0m[0m  def eval(expr: Expr, declarations: List[FDeclaration]): State[S,Integer] = {[0m
-[0m[[0m[31merror[0m] [0m[0m                                                          ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\newlo\Downloads\trabalho de TP2\trabalho2\Trabalho2TP2\FLanguage\src\main\scala\br\unb\cic\flang\Interpreter.scala:29:24: not found: value State[0m
-[0m[[0m[31merror[0m] [0m[0m      case CInt(v) =>  State.pure[S,Integer](v)[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Users\newlo\Downloads\trabalho de TP2\trabalho2\Trabalho2TP2\FLanguage\src\main\scala\br\unb\cic\flang\Interpreter.scala:46:24: not found: value State[0m
-[0m[[0m[31merror[0m] [0m[0m      case Id(name) => State[S,Integer] { state =>[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m5 errors found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\leoma\Trabalho2TP2\src\main\scala\br\unb\cic\flang\Monad.scala:64:66: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : br.unb.cic.flang.EH_and_StateMonad.package.S[String][0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  cats.data.IndexedStateT[cats.Eval,(String, Int),(String, Int),String][0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m        (currentState,Left(s"Variable $name is not declared".pure[S]))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
