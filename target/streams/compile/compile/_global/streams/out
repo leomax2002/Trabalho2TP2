@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\leoma\Trabalho2TP2\src\main\scala\br\unb\cic\flang\Monad.scala:64:66: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : br.unb.cic.flang.EH_and_StateMonad.package.S[String][0m
-[0m[[0m[31merror[0m] [0m[0m    (which expands to)  cats.data.IndexedStateT[cats.Eval,(String, Int),(String, Int),String][0m
-[0m[[0m[31merror[0m] [0m[0m required: String[0m
-[0m[[0m[31merror[0m] [0m[0m        (currentState,Left(s"Variable $name is not declared".pure[S]))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\leoma\Trabalho2TP2\src\main\scala\br\unb\cic\flang\Monad.scala:37:30: value _2 is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m      else Right(variable(0)._2)[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

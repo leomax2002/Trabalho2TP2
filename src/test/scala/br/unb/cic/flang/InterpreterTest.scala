@@ -16,7 +16,7 @@ class InterpreterTest extends AnyFlatSpec with should.Matchers {
   val declarations = List(inc, bug)
 
 
-  val initialState = ("",0)
+  val initialState: List[(String,Int)] = List(("",0))
 
   "eval CInt(5)" should "return an integer value 5." in {
     val c5 = CInt(5)

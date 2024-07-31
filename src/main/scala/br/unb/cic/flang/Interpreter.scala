@@ -31,8 +31,7 @@ object Interpreter {
           rigth <- Reval
         } yield left * rigth
       }
-     case Id(name) => {getCurrentState(name)
-     }
+     case Id(name) => lookupVar(name)
 
       case App(name, arg) => {
         val fdecl = lookup(name, declarations)

@@ -1,0 +1,15 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(64bce513-d55a-4da7-9593-f28c7a2293ae), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to C:\Users\leoma\Trabalho2TP2\target\scala-2.13\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSubstitutionTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in CInt(10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the int constant 10.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in Id('x')[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the int constant 5.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in Id('y')[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Id('y').[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in Add(CInt(10), Id('x'))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Add(CInt(10), CInt(5))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in Add(CInt(10), Add(Id('x'), Id('x')))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return Add(CInt(10), Add(CInt(5), CInt(5)))[0m[0m

@@ -1,5 +1,7 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(br.unb.cic.flang.SubstitutionTest, org.scalatest.tools.Framework$$anon$1@1660167, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(br.unb.cic.flang.InterpreterTest, org.scalatest.tools.Framework$$anon$1@1660167, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(ef16b55f-3501-452e-92c7-6ca8817dfd62), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\leoma\Trabalho2TP2\target\scala-2.13\classes ...[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mSubstitutionTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32msubstitute x by CInt(5) in CInt(10)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the int constant 10.[0m[0m
@@ -26,11 +28,10 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32meval Add(5, App(bug, 10)) [0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should raise an error.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 320 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 322 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 12[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 12, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
-[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	br.unb.cic.flang.SubstitutionTest[0m
-[0m[[0m[0mdebug[0m] [0m[0m	br.unb.cic.flang.InterpreterTest[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 1 s, completed 31/07/2024 20:30:14[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

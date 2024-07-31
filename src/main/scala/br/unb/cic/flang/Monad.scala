@@ -6,34 +6,30 @@ import cats.data.OptionT
 import cats.data.{EitherT, State, StateT}
 
 package object EH_and_StateMonad {
-  type S[A] = State[(String,Int), A]
-  type S2 = List[(String, Int)]
+  type S[A] = State[List[(String,Int)], A]
   type StateError[A] = EitherT[S, String, A]
-  type MonadList = List[StateError[Int]]
 
 
 
-  def declareVar(state: (String,Int), value: Either[String, Int]): StateError[Int] = EitherT {
-    State {
-      currentState => (state, value)
+  def declareVar(state:(String,Int), value: Either[String, Int]): StateError[Int] = EitherT.liftF {
+    State[List[(String,Int)],Int] { list=>
+      (list:+state,state._2)
     }
   }
-
 
   def assertError[A](m: StateError[A]): Boolean = m.value.runEmptyA.value match {
     case Left(_) => true
     case Right(_) => false
   }
 
-  def getCurrentState(name: String): StateError[Int] = EitherT {
-    State { currentState =>
-      println(currentState._2)
-      if (currentState._1 == name) {
-        (currentState, Right(currentState._2))
+  def lookupVar(name: String): StateError[Int] = EitherT{
+    State.get[List[(String,Int)]].map{list=>
+      val variable = list.zipWithIndex.collect{
+        case (state, idx) if state._1 == name => state._2
       }
-      else{
-        (currentState,Left(s"Variable $name is not declared"))
-      }
+      if (variable.isEmpty) Left(variable.mkString(s"Variable $name is not declared"))
+      else Right(variable.last)
     }
   }
+
 }

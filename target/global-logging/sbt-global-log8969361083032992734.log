@@ -1,0 +1,14 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(test, Some(8e964814-9557-4e33-9aae-d512db5f5d15), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Test / test[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\leoma\Trabalho2TP2\target\scala-2.13\classes ...[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\leoma\Trabalho2TP2\src\main\scala\br\unb\cic\flang\Interpreter.scala:59:9: not found: value declared[0m
+[0m[[0m[31merror[0m] [0m[0m        declared = declareVar(fdecl.arg, Right(evalarg))[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\leoma\Trabalho2TP2\src\main\scala\br\unb\cic\flang\Interpreter.scala:61:17: not found: value declared[0m
+[0m[[0m[31merror[0m] [0m[0m        println(declared)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 0 s, completed 30/07/2024 05:05:47[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
