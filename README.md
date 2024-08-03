@@ -31,8 +31,12 @@ O código foi implementado por meio da plataforma inteij utilizando Scala 2.13.1
 (obs: para a leitura de arquivo é necessário o nome completo do arquivo, ou seja seu PATH Absoluto)
 
 ## Referências
-[Livro do Patterson citado (leiam apenas as páginas 98 e 99)] (https://drive.google.com/file/d/19dqWms9qUQ2Bi8JfsBhC5Q6zDeJd0s5o/view)
+[Noel Welsh. Functional Programming Strategies In Scala with Cats. e-book,
+2024.] (https://scalawithcats.com)
 
-[Rotten Potatoes] (https://github.com/gabrielsr/rottenpotatoes/tree/main/app)
+[Wadler, P. (1993). Monads for functional programming. In: Broy, M. (eds) Program Design Calculi. NATO ASI Series, vol 118. Springer, Berlin, Heidelberg. https://doi.org/10.1007/978-3-662-02880-3_8] (https://cs.brown.edu/courses/cs173/2012/book/book.pdf)
 
-[Lopes, C.V. (2020). Exercises in Programming Style (2nd ed.). Chapman and Hall/CRC.] (https://doi.org/10.1201/9780429343216)
+[Monads for functional programming] (https://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf)
+
+[Repositório FLanguage. Rodrigo Bonifácio. 2024] (https://github.com/rbonifacio/FLanguage/tree/main)
+
