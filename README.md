@@ -4,9 +4,13 @@ Repositório para o Projeto da Disciplina (Primeira Entrega) Técnicas de Progra
 Esse Projeto tem como objetivo aprimorar a Linguagem de Programação ilustrativa FLang por meio do uso dos idiomas Monads e Monads Transformers. A implementação foi realizada em Scala.
 
 Foram Implementadas 4 Atividades contidas em 4 Branches presentes nesse Repositório:
+
 1.state-with-cats: Implementa uma Monad State pertencente à biblioteca Scala With Cats para se solucionar a declaração de variáveis na linguagem FLang;
+
 2.State-and-EH-with-cats: Considerando o idioma de Monad Transformers e a biblioteca Scala With Cats, utiliza uma stack de monads composta por uma State Monad e uma Error Monad para se lidar com a declaração de variáveis e possíveis erros na FLang; 
+
 3.ifThenElse: Inclue o suporte a uma nova expressão ifThenElse à branch anterior. Também foi elaborada uma forma de se representar tipos booleanos na linguagem FLang;
+
 4.Parser: Definiu-se uma sintaxe concreta para a linguagem FLang e, assim, implementou-se um parser por meio das bibliotecas de Parser Combinator para Scala.
 
 ## Link para a VideoAula e para o repositório
