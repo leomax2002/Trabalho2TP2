@@ -9,6 +9,12 @@ object FLangParser extends RegexParsers {
   def variable: Parser[Id] = """[a-zA-Z][a-zA-Z0-9]*""".r ^^ Id
 
   def expr: Parser[Expr] = ifExpr | addExpr | mulExpr | appExpr | int | variable
+  def factor: Parser[Expr] = int | variable | "(" ~> expr <~ ")"  
+  def term: Parser[Expr] = factor ~ rep("*" ~ factor) ^^ {
+    case firstFactor ~ restFactors => restFactors.foldLeft(firstFactor) {
+      case (acc, "*" ~ factor) => Mul(acc, factor)
+    }
+  }  
   
   def addExpr: Parser[Expr] = term ~ rep("+" ~ term) ^^ {
     case firstTerm ~ restTerms => restTerms.foldLeft(firstTerm) {
@@ -29,14 +35,6 @@ object FLangParser extends RegexParsers {
   def ifExpr: Parser[Expr] = "if" ~ expr ~ "then" ~ expr ~ "else" ~ expr ^^ {
     case "if" ~ cond ~ "then" ~ th ~ "else" ~ el => IfThenElse(cond, th, el)
   }
-
-  def term: Parser[Expr] = factor ~ rep("*" ~ factor) ^^ {
-    case firstFactor ~ restFactors => restFactors.foldLeft(firstFactor) {
-      case (acc, "*" ~ factor) => Mul(acc, factor)
-    }
-  }
-
-  def factor: Parser[Expr] = int | variable | "(" ~> expr <~ ")"
 
   def parseExpr(input: String): ParseResult[Expr] = parseAll(expr, input)
 }
