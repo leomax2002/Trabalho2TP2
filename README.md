@@ -17,6 +17,7 @@ Foram Implementadas 4 Atividades contidas em 4 Branches presentes nesse Reposit�
 [Link para a videoaula:] (https://youtu.be/inOMhZAd6sk)
 
 [Link para o repositório:] (https://github.com/leomax2002/Trabalho2TP2)
+
 ## Integrantes
 Lucas Fernandes - 180022563 
 
@@ -27,6 +28,7 @@ Leonardo Maximo - 200022172
 João Vitor Dickmann - 211042757 
 
 Lucas Seabra - 170039951 
+
 ## Execução do Código
 Para executar os programas basta utilizar o procedimento de compilação padrão do sbt do Scala: Dentro da pasta correta, utilizar o comando compile para compilar o código e test para executar a suite de testes.
 
