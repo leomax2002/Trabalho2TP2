@@ -14,7 +14,7 @@ Foram Implementadas 4 Atividades contidas em 4 Branches presentes nesse Reposit�
 4.Parser: Definiu-se uma sintaxe concreta para a linguagem FLang e, assim, implementou-se um parser por meio das bibliotecas de Parser Combinator para Scala.
 
 ## Link para a VideoAula e para o repositório
-[Link para a videoaula:] (https://youtu.be/inOMhZAd6sk)
+[Link para a videoaula:] (https://youtu.be/grvP0OUqXm0)
 
 [Link para o repositório:] (https://github.com/leomax2002/Trabalho2TP2)
 
